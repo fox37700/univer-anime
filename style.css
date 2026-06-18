@@ -7,19 +7,58 @@ body {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centre tout le contenu horizontalement */
+    align-items: center;
 }
 
 /* 2. Header */
 header {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
-/* 3. Sections */
+/* 3. Bannière Hero */
+.hero-banner {
+    width: 90%;
+    max-width: 1200px;
+    height: 400px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1200x400');
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    text-align: center;
+}
+
+.hero-banner h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.btn-visionner {
+    background-color: #2ecc71;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.btn-visionner:hover {
+    background-color: #27ae60;
+}
+
+/* 4. Sections et Titres */
 .section-container {
-    width: 90%; /* Prend 90% de la largeur de la page */
-    max-width: 1200px; /* Ne dépasse jamais 1200px pour rester lisible */
-    margin: 30px auto; /* Centre la section */
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
 }
 
 h2 {
@@ -27,36 +66,24 @@ h2 {
     border-left: 5px solid #2ecc71;
     padding-left: 15px;
     margin-bottom: 20px;
-    text-align: left; /* Garde le titre à gauche, c'est mieux pour la lecture */
+    text-align: left;
 }
 
-/* 4. La grille scrollable */
+/* 5. La grille scrollable */
 .grille {
     display: flex;
     gap: 20px;
-    overflow-x: auto; /* Active le défilement horizontal */
-    padding-bottom: 20px; /* Espace pour la barre de scroll */
+    overflow-x: auto;
+    padding-bottom: 20px;
     width: 100%;
 }
 
-/* Personnalisation de la barre de scroll (Visible) */
-.grille::-webkit-scrollbar {
-    height: 12px;
-}
-.grille::-webkit-scrollbar-track {
-    background: #1a202c;
-    border-radius: 6px;
-}
-.grille::-webkit-scrollbar-thumb {
-    background: #4a5568;
-    border-radius: 6px;
-    border: 2px solid #1a202c;
-}
-.grille::-webkit-scrollbar-thumb:hover {
-    background: #2ecc71;
-}
+.grille::-webkit-scrollbar { height: 12px; }
+.grille::-webkit-scrollbar-track { background: #1a202c; border-radius: 6px; }
+.grille::-webkit-scrollbar-thumb { background: #4a5568; border-radius: 6px; border: 2px solid #1a202c; }
+.grille::-webkit-scrollbar-thumb:hover { background: #2ecc71; }
 
-/* 5. Les cartes */
+/* 6. Les cartes */
 .carte {
     background-color: #1a202c;
     padding: 10px;
