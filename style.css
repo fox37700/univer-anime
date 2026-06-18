@@ -5,18 +5,21 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre tout le contenu horizontalement */
 }
 
-/* 2. Header (Logo) */
+/* 2. Header */
 header {
     margin-bottom: 40px;
 }
 
-/* 3. Sections et Titres */
+/* 3. Sections */
 .section-container {
-    margin: 40px 0;
-    text-align: left;
+    width: 90%; /* Prend 90% de la largeur de la page */
+    max-width: 1200px; /* Ne dépasse jamais 1200px pour rester lisible */
+    margin: 30px auto; /* Centre la section */
 }
 
 h2 {
@@ -24,44 +27,42 @@ h2 {
     border-left: 5px solid #2ecc71;
     padding-left: 15px;
     margin-bottom: 20px;
+    text-align: left; /* Garde le titre à gauche, c'est mieux pour la lecture */
 }
 
 /* 4. La grille scrollable */
 .grille {
     display: flex;
     gap: 20px;
-    overflow-x: auto;         /* Permet le défilement horizontal */
-    padding-bottom: 15px;    /* Espace pour que la barre de scroll ne touche pas les images */
-    scrollbar-width: thin;    /* Pour Firefox */
+    overflow-x: auto; /* Active le défilement horizontal */
+    padding-bottom: 20px; /* Espace pour la barre de scroll */
+    width: 100%;
 }
 
 /* Personnalisation de la barre de scroll (Visible) */
 .grille::-webkit-scrollbar {
-    height: 12px;             /* Hauteur de la barre */
+    height: 12px;
 }
-
 .grille::-webkit-scrollbar-track {
-    background: #1a202c;      /* Fond de la piste */
+    background: #1a202c;
     border-radius: 6px;
 }
-
 .grille::-webkit-scrollbar-thumb {
-    background: #4a5568;      /* Couleur de la barre */
+    background: #4a5568;
     border-radius: 6px;
-    border: 2px solid #1a202c; /* Petit effet de bordure */
+    border: 2px solid #1a202c;
 }
-
 .grille::-webkit-scrollbar-thumb:hover {
-    background: #2ecc71;      /* Change de couleur au survol */
+    background: #2ecc71;
 }
 
-/* 5. Les cartes (Affiches) */
+/* 5. Les cartes */
 .carte {
     background-color: #1a202c;
     padding: 10px;
     border-radius: 8px;
-    min-width: 180px;         /* Empêche les cartes d'être trop écrasées */
-    flex: 0 0 auto;           /* Empêche les cartes de rétrécir */
+    min-width: 180px; 
+    flex: 0 0 auto;
 }
 
 .carte img {
