@@ -8,3 +8,21 @@ body {
 img {
     margin-top: 20px;         /* Espace un peu le logo du haut */
 }
+.grille-animes {
+    display: flex;          /* La magie pour mettre en ligne */
+    justify-content: center; /* Centre les cartes */
+    gap: 20px;              /* Espace entre les cartes */
+    margin-top: 20px;
+}
+
+.carte {
+    background-color: #1a202c; /* Couleur sombre pour la carte */
+    padding: 10px;
+    border-radius: 8px;       /* Bords arrondis */
+    width: 150px;
+}
+
+.carte img {
+    width: 100%;              /* L'image prend toute la largeur de la carte */
+    border-radius: 4px;
+}
