@@ -7,7 +7,7 @@ body {
     padding: 20px;
 }
 
-/* Header et boutons */
+/* Header et boutons alignés en haut */
 header {
     display: flex;
     flex-direction: column;
@@ -20,11 +20,21 @@ header {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     position: absolute;
     top: 0;
-    padding-right: 20px;
+    padding: 10px 20px;
     box-sizing: border-box;
+    gap: 15px;
 }
+
+.nav-top-link {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.nav-top-link:hover { color: #2ecc71; }
 
 .btn-auth {
     background-color: #4a5568;
@@ -35,16 +45,18 @@ header {
     font-size: 0.9rem;
 }
 
+/* Logo */
 header img {
     width: 450px;
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;
+    margin-top: 40px;
 }
 
 /* Recherche */
 .recherche-container {
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
 }
 
@@ -53,30 +65,6 @@ header img {
     width: 300px;
     border-radius: 5px;
     border: none;
-}
-
-/* Hero Banner */
-.hero-banner {
-    width: 90%;
-    max-width: 1200px;
-    height: 400px;
-    background: #1a202c;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 20px auto;
-    text-align: center;
-}
-
-.btn-visionner {
-    background-color: #2ecc71;
-    color: white;
-    padding: 12px 30px;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-top: 20px;
 }
 
 /* Sections et Grille */
@@ -111,4 +99,20 @@ h2 {
     height: 250px;
     object-fit: cover;
     border-radius: 4px;
+}
+
+/* Pagination */
+.pagination {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.pagination button {
+    padding: 10px 15px;
+    margin: 0 5px;
+    background: #1a202c;
+    color: white;
+    border: 1px solid #4a5568;
+    border-radius: 5px;
+    cursor: pointer;
 }
