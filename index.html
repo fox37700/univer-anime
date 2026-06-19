@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <title>Univer-Anime</title>
+    <title>Univer-Anime - Accueil</title>
 </head>
 <body>
     <header>
         <div class="header-top">
             <a href="index.html" class="nav-top-link" style="color: #2ecc71;">Accueil</a>
             <a href="mangas.html" class="nav-top-link">Mangas</a>
+            <a href="animes.html" class="nav-top-link">Animes</a>
             <a href="connexion.html" class="btn-auth">Connexion</a>
             <a href="inscription.html" class="btn-auth">S'inscrire</a>
         </div>
-        <img src="Gemini_Generated_Image_5ymtpw5ymtpw5ymt.png" alt="Logo">
+        <img src="Gemini_Generated_Image_5ymtpw5ymtpw5ymt.png" alt="Logo Univer-Anime">
         <div class="recherche-container">
             <input type="text" id="barre-recherche" placeholder="Rechercher...">
             <button id="btn-recherche">Rechercher</button>
@@ -29,17 +30,17 @@
     <section class="section-container">
         <h2><a href="mangas.html" style="color: white; text-decoration: none;">Catalogue des Mangas</a></h2>
         <div class="grille">
-            <div class="carte"><img src="https://via.placeholder.com/150" alt="Anime"><p>Manga 1</p></div>
-            <div class="carte"><img src="https://via.placeholder.com/150" alt="Anime"><p>Manga 2</p></div>
-            <div class="carte"><img src="https://via.placeholder.com/150" alt="Anime"><p>Manga 3</p></div>
-            <div class="carte"><img src="https://via.placeholder.com/150" alt="Anime"><p>Manga 4</p></div>
-            <div class="carte"><img src="https://via.placeholder.com/150" alt="Anime"><p>Manga 5</p></div>
-            <div class="carte"><img src="https://via.placeholder.com/150" alt="Anime"><p>Manga 6</p></div>
+            <div class="carte"><img src="https://via.placeholder.com/150" alt="Manga"><p>Manga 1</p></div>
+            <div class="carte"><img src="https://via.placeholder.com/150" alt="Manga"><p>Manga 2</p></div>
+            <div class="carte"><img src="https://via.placeholder.com/150" alt="Manga"><p>Manga 3</p></div>
+            <div class="carte"><img src="https://via.placeholder.com/150" alt="Manga"><p>Manga 4</p></div>
+            <div class="carte"><img src="https://via.placeholder.com/150" alt="Manga"><p>Manga 5</p></div>
+            <div class="carte"><img src="https://via.placeholder.com/150" alt="Manga"><p>Manga 6</p></div>
         </div>
     </section>
 
     <section class="section-container">
-        <h2>Animes Populaires</h2>
+        <h2><a href="animes.html" style="color: white; text-decoration: none;">Animes Populaires</a></h2>
         <div class="grille">
             <div class="carte"><img src="https://via.placeholder.com/150" alt="Anime"><p>Anime 1</p></div>
             <div class="carte"><img src="https://via.placeholder.com/150" alt="Anime"><p>Anime 2</p></div>
@@ -53,8 +54,8 @@
     <script>
         document.getElementById('btn-recherche').addEventListener('click', function() {
             const val = document.getElementById('barre-recherche').value;
-            if(val) alert("Tu cherches : " + val);
-            else alert("Veuillez entrer le nom d'un anime.");
+            if(val) alert("Recherche : " + val);
+            else alert("Veuillez entrer un nom.");
         });
     </script>
 </body>
