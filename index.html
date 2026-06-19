@@ -17,7 +17,7 @@
         
         <div class="recherche-container">
             <input type="text" id="barre-recherche" placeholder="Rechercher un anime...">
-            <button>Rechercher</button>
+            <button id="btn-recherche">Rechercher</button>
         </div>
     </header>
 
@@ -27,21 +27,15 @@
         <a href="#" class="btn-visionner">Visionner maintenant</a>
     </section>
 
-    <section class="section-container">
-        <h2>Catalogue des Mangas</h2>
-        <div class="grille">
-            <div class="carte"><img src="https://via.placeholder.com/150" alt="Anime"><p>Manga 1</p></div>
-            <div class="carte"><img src="https://via.placeholder.com/150" alt="Anime"><p>Manga 2</p></div>
-        </div>
-    </section>
-
-    <section class="section-container">
-        <h2>Animes Populaires</h2>
-        <div class="grille">
-            <div class="carte"><img src="https://via.placeholder.com/150" alt="Anime"><p>Anime 1</p></div>
-            <div class="carte"><img src="https://via.placeholder.com/150" alt="Anime"><p>Anime 2</p></div>
-        </div>
-    </section>
-
+    <script>
+        document.getElementById('btn-recherche').addEventListener('click', function() {
+            const recherche = document.getElementById('barre-recherche').value;
+            if (recherche) {
+                alert("Tu cherches : " + recherche + ". (La recherche sera bientôt activée !)");
+            } else {
+                alert("Veuillez entrer le nom d'un anime.");
+            }
+        });
+    </script>
 </body>
 </html>
