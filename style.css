@@ -7,7 +7,7 @@ body {
     padding: 20px;
 }
 
-/* Header et bouton en haut à droite */
+/* Header et boutons */
 header {
     display: flex;
     flex-direction: column;
@@ -35,9 +35,17 @@ header {
     font-size: 0.9rem;
 }
 
+/* Nouveau : Style du Logo agrandi */
+header img {
+    width: 450px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
 /* Recherche */
 .recherche-container {
-    margin-top: 50px;
+    margin-top: 20px;
     text-align: center;
 }
 
