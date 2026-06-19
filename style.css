@@ -35,7 +35,6 @@ header {
     font-size: 0.9rem;
 }
 
-/* Nouveau : Style du Logo agrandi */
 header img {
     width: 450px;
     max-width: 100%;
@@ -80,7 +79,7 @@ header img {
     margin-top: 20px;
 }
 
-/* Sections */
+/* Sections et Grille */
 .section-container {
     width: 90%;
     max-width: 1200px;
@@ -94,9 +93,9 @@ h2 {
 }
 
 .grille {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 20px;
-    overflow-x: auto;
     padding-bottom: 20px;
 }
 
@@ -104,8 +103,7 @@ h2 {
     background-color: #1a202c;
     padding: 10px;
     border-radius: 8px;
-    min-width: 180px;
-    flex: 0 0 auto;
+    text-align: center;
 }
 
 .carte img {
